@@ -1,7 +1,7 @@
 ﻿
 #Pythonの環境構築
 
-　このテキストでは、Windows上でPythonの開発環境を構築するための方法を説明する。手っ取り早く環境を整えたい人は、1,2,4節を読んでいけばうまくいくはず。
+　このテキストでは、Windows上でPythonの開発環境を構築するための方法を説明する。手っ取り早く環境を整えたい人は、**1,2,4,5節**を読んでいけばうまくいくはず。
   
 ##1.Python本体のインストール
 
@@ -67,7 +67,7 @@ $ pip install --use-wheel --no-index --find-links=wheelhouse <パッケージ.wh
 $ easy_install <パッケージ.egg>
 ```
 
-例) matplotlibのインストール
+例) matplotlibのインストール  
 Pythonの環境は次の通りとする。
 
 - ver 3.5  
@@ -113,16 +113,17 @@ $ pip freeze
 ###・matplotlib
 　これもNumpyとだいたい同じ。[こちら](http://sourceforge.net/projects/matplotlib/files/matplotlib/)からバージョン1.4.3を選び、"windows"の中にある"matplotlib-1.4.3.win32-py3.4.exe"をダウンロードし実行。ただしこれだけでは動作しない。matplotlibを動作させるために必要な次の３つのパッケージをインストールする。
 
--six  
--pyparsing  
+--**six** 
+--**pyparsing**  
 　次のコマンドを実行すればOK
 
 ```
-$ pip install six
+$ pip install six   
 $ pip install pyparsing
 ```
 
--dateutil  
+
+--**dateutil**
 　少し面倒。[こちら](https://pypi.python.org/pypi/python-dateutil)からバイナリをダウンロードし、次のコマンドを実行する。
 
 ```
@@ -141,5 +142,12 @@ $ easy_install networkx-1.10-py3.4.egg
 ```
 
 
-==============================
-他にもパッケージを追加していく。
+--------------------------------------------  
+他にもパッケージを追加していく。  
+
+
+##5.Eclipseの導入  
+Pythonのコードを書きコンパイルするという一連の作業をするにはさまざまな方法があるが、WindowsではEclipseを使うと楽だと思われる。手順は次の通り。
+###ダウンロード
+まず[Eclipseのダウンロードサイト](http://mergedoc.osdn.jp/)でEclipseの最新版を選ぶ。（これを書いた時点では4.5)
+
